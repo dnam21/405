@@ -1,0 +1,650 @@
+/*
+  Theme Name: Final Theme
+  Version: 1
+  Author: Daniel
+*/
+
+/*FONTS**************************/
+@import url(https://fonts.googleapis.com/css?family=Raleway:500|Pacifico|Permanent+Marker);
+.navbar-brand{
+  font-family: 'Pacifico', cursive;
+}
+.hero h1,
+.single-title{
+  font-family: 'Permanent Marker', cursive;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+  font-family: helvetica, arial, sans-serif;
+}
+.home-one h2,
+.box h4,
+.home-three h2,
+.caption a{
+  font-family: 'Raleway', sans-serif;
+  font-size: 5vmin;
+}
+.home-one h2,
+.box h4,
+.home-three h2,
+.events-body h3{
+  font-size: 32px;
+}
+.home-button a:hover{
+  text-decoration: none;
+}
+button a{
+  font-size: 28px;
+}
+.events-body p{
+  font-size: 24px;
+}
+.hero-1,
+.hero h1,
+.history h1{
+  font-size: 70px;
+}
+.events-body p{
+  line-height: initial;
+}
+/*END FONTS**********************/
+/*COLOR******************/
+a,
+a:hover,
+.hero h1{
+  color: #222;
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a,
+.box h4,
+.history h1,
+.timeline > li > .timeline-badge{
+  color: #fff;
+}
+button{
+  background-color: #07639d;
+}
+button:hover{
+  background-color: #07899d;
+}
+/*END COLOR**************/
+/*GENERAL****************/
+/*.content,
+.home-content,
+.hero img,
+.hero h1,
+.attraction h2,
+.attraction-body,
+.events,
+.single-att{
+  width: 1275px;
+}*/
+.content,
+.navbar,
+.home-two .row,
+.home-three img,
+.rift img,
+.rift .caption,
+.rift span[class*="span"]{
+  width: 100%;
+}
+
+.navbar-header,
+.navbar .container-fluid,
+.navbar-brand{
+  height: 100%;
+}
+.hero,
+.home-wrap,
+.box img,
+.events-hero{
+  overflow: hidden;
+}
+.hero img,
+.hero h1,
+.timeline > li > .timeline-panel:after,
+.timeline > li > .timeline-panel:before,
+.timeline > li > .timeline-badge,
+.attraction h2,
+.rift span[class*="span"],
+.rift .caption,
+.timeline > li > .timeline-badge,
+.timeline > li > .timeline-panel:before,
+.timeline:before,
+.timeline > li > .timeline-panel:after{
+  position: absolute;
+}
+.box h4,
+.box button,
+.timeline,
+.timeline > li > .timeline-panel,
+.timeline > li,
+.attraction-body,
+.rift,
+.timeline > li > .timeline-panel,
+.timeline > li,
+.timeline {
+  position: relative;
+}
+.timeline > li > .timeline-panel:after,
+.timeline > li > .timeline-panel:before{
+  display: inline-block;
+}
+/*END GENERAL************/
+/*HEADER*****************/
+.navbar{
+  margin: 0;
+  position: fixed;
+  z-index: 1000;
+  border-radius: 0;
+  height: 70px;
+  padding: 0 9%;
+}
+.navbar-brand{
+  font-size: 40px;
+  margin-top: 5px;
+}
+.navbar-collapse ul{
+  margin-top: 5px;
+  font-size: 25px;
+}
+/*END HEADER*************/
+/*HOME******************/
+.hero{
+  height: 600px;
+}
+.hero-2{
+  font-size: 90px;
+}
+.hero img{
+  top: 70px;
+  height: 548px;
+}
+.hero h1{
+  z-index: 100;
+  top: 200px;
+  font-weight: bold;
+}
+.home-one h2{
+  text-decoration: underline;
+}
+.home-one{
+  width: 80%;
+}
+.home-two{
+  height: 518px;
+}
+.home-two .row{
+  margin: 0;
+}
+.box{
+  padding: 0;
+  height: 450px;
+}
+.box img{
+  max-width: 97%;
+}
+.box h4{
+  z-index: 100;
+  bottom: 330px;
+  font-size: 50px;
+}
+.home-button{
+  bottom: 250px;
+  border: none;
+  padding: 15px 30px;
+}
+.home-three{
+  height: 750px;
+}
+.home-three img{
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.hover-img{
+-webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+     -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+        transition: all 1s ease;
+}
+.hover-img:hover{
+  -webkit-filter: grayscale(100%);
+}
+/*END HOME*************/
+/*HISTORY PAGE*****************/
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 20px;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li > .timeline-panel {
+  width: 46%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li > .timeline-panel:before {
+  top: 26px;
+  right: -15px;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-panel:after {
+  top: 27px;
+  right: -14px;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-badge{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #999999;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+.timeline-badge.success {
+  background-color: #3f903f !important;
+}
+.timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+.timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+.timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 5px;
+}
+/*END HISTORY*******************/
+/*ATTRACTIONS*******************/
+.attraction h2{
+  top: 650px;
+}
+.attraction-body{
+  top: 200px;
+}
+/* Base plugin styles */
+.rift { 
+  height: 614px;
+}
+.rift img { 
+  height: 0; 
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+.rift .caption {  
+  top: 50%;
+  height: 60px; /* Define caption height */
+  line-height: 60px; /* Define matched line-height */ 
+  margin: -30px 0 0 0; /* Half caption height */
+  text-align: center; 
+  z-index: 0;
+}
+.rift span[class*="span"] {
+  display: block;
+  height: 50%;
+  overflow: hidden;
+  left: 0;
+  z-index: 1;
+  transform: translate3d(0,0,0); /* Acceleration FTW */
+  transition: transform .25s; /* Define anim. speed */
+}
+.rift span.top-span { top: 0; }
+.rift span.btm-span { bottom: 0; }
+.rift:hover span.top-span { 
+  transform: translate(0,-30px); /* Half caption height */
+}
+.rift:hover > span.btm-span { 
+  transform: translate(0,30px); /* Half caption height */
+}
+.rift .caption { 
+  background-color: #fff;
+}
+
+/*END ATTRACTIONS****************/
+
+/*EVENTS ************************/
+.events{
+  padding: 0;
+}
+.events-hero{
+   max-height: 450px;
+}
+.events-hero img{
+  bottom: 40px;
+}
+.events .row{
+  padding: 0;
+  margin: 0;
+}
+.att-hero{
+  height: 400px;
+}
+.events h1{
+  width: 100%;
+  top: 20%;
+}
+.events h2{
+  text-decoration: underline;
+  margin: 20px;
+}
+.events-body {
+  min-height: 277px;
+}
+.events-body h3{
+  font-weight: bold;
+}
+.events-body p{
+  margin-top: 20px;
+}
+.events-body img{
+  max-width: 25%;
+}
+.text{
+  display: table;
+}
+
+/*END EVENTS*********************/
+
+@media (max-width: 1200px) {
+  .events-body{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+   .text{
+    width: 67%;
+   }
+   .rift{
+    width: 18vw;
+    height: 74.8vh;
+   }
+}
+@media (max-width: 991px) {
+  .events-body{
+    width: 100%;
+    left: 0;
+  }
+/*  .events-body img{
+    margin: 0 31%;
+  }*/
+  .events-body h3,
+  .events h2{
+    font-size: 5vmax;
+  }
+  .events-body p{
+    font-size: 2.5vmax;
+  }
+  .events h1{
+    top: 15%;
+    font-size: 6vmin;
+  }
+}
+
+
+.content{
+
+}
+
+/*FOOTER******************/
+#footer{
+  background-color: #080808;
+  margin-top: 40px;
+}
+.links{
+  list-style: none;
+  width: 470px;
+}
+.links li{
+  margin: 0 20px;
+  display: inline-block;
+}
+.links a,
+.links li{
+  color: #fff;
+}
+.footer-img{
+  width: 50px;
+}
+.twitter-img{
+  width: 55px;
+}
+.social{
+  position: relative;
+  top: 50px;
+  width: 217px;
+}
+.social img:hover{
+  -webkit-filter: invert(100%) !important;
+}
+.footer-text{}
+#footer p a{
+  color: #fff;
+}
+/*END FOOTER**************/
+
+
+
+
+
+
+
+
+/*NEW*/
+a:hover{
+  text-decoration: none;
+    color: #fff;
+}
+.events-link{
+  border: none;
+}
+.navbar-inverse .navbar-nav>li>a{
+    font-size: 1.9vmax; 
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+  background-color: #222;
+}
+.home-content,
+.hero h1,
+.attraction-body{
+  max-width: 1275px;
+}
+.hero img,
+.attraction h2,
+.single-att{
+ width: 1275px;
+}
+.attraction-body{
+  height: 800px;
+}
+.attraction-body .row{
+  width: 318.7px;
+  height: 614px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form,
+.hero h1{
+ width: 100%;
+}
+.home-three{
+  height: 100%;
+}
+.home-two .box .right{
+  margin-right: 0;
+}
+.home-two .box .left{
+  margin-left: 0;
+}
+.caption a{
+  font-size: 4vmin;
+}
+.events{
+ /* padding: 0 16%;*/
+  max-width: 1275px;
+  height: 1300px;
+}
+.single{
+    height: 1900px;
+    width: 1275px;
+}
+@media (max-width: 1274px) {
+  .home-two{
+     height: 43vmax;
+  }
+  .home-three .row {
+  }
+  .box h4{
+    bottom: 30vmin;
+    font-size: 6vmin;
+    margin-bottom: 9px;
+  }
+  .box button{
+    padding: 2vmin 4vmin;
+  }
+  button a{
+    font-size: 3vmin;
+  }
+}
+
+@media (max-width: 1200px) {
+  .attraction-body .row{
+    width: 247px;
+  }
+  .events{
+    padding: 0;
+  }
+  .events-body img{
+    max-width: 100%;
+   }
+}
+
+@media (max-width:991px){
+  .events-body img{
+    max-width: 100%;
+    margin: 0 auto;
+   }
+   .text{
+    width: 100%;
+   }
+}
+@media (max-width: 767px) {
+  .box h4{
+    bottom: 45vmin;
+  }
+  .box img{
+    max-width: 100%;
+  }
+  .home-two .row .box{
+    margin-bottom: auto;
+    height: 100%;
+    }
+    .home-two .box .right,
+    .home-two .box .left{
+      margin: 0;
+    }
+    .box button,
+    .home-button{
+    bottom: 120px;
+    width: 100%;
+    height: 20%;
+  }
+
+@media (max-width: 600px) {
+  button a{
+    font-size: 10vmin;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
